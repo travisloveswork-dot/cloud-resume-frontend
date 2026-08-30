@@ -21,7 +21,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync website/ s3://travismohr.com --delete
+          aws s3 sync . s3://travis-mohr-cdk-resume-bucket --delete
 
       - name: Invalidate CloudFront Cache
         run: |
