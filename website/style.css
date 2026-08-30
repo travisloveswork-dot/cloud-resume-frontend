@@ -72,6 +72,12 @@ li {
     font-weight: bold;
 }
 
+.github-catchall {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
 a {
     color: #0056b3;
     text-decoration: none;
