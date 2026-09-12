@@ -47,6 +47,11 @@ h3 {
     font-size: 1.05em;
 }
 
+/* Ensure project titles with long strings wrap nicely */
+h3 span {
+    display: inline-block;
+}
+
 .date-location {
     float: right;
     font-weight: normal;
@@ -63,6 +68,18 @@ li {
     margin-bottom: 5px;
 }
 
+/* Project section styling */
+.project-item {
+    margin-bottom: 15px;
+}
+
+.github-catchall {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
 .counter-section {
     text-align: center;
     margin-top: 40px;
@@ -70,12 +87,6 @@ li {
     background: #eef2f7;
     border-radius: 5px;
     font-weight: bold;
-}
-
-.github-catchall {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 0.95em;
 }
 
 a {
@@ -87,9 +98,25 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Mobile responsiveness adjustments */
 @media (max-width: 600px) {
+    body {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
     .date-location {
         float: none;
         display: block;
+        margin-top: 2px;
+    }
+
+    h3 span {
+        display: block;
+        margin-top: 2px;
     }
 }
